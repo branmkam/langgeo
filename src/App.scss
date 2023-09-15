@@ -1,0 +1,34 @@
+.map {
+  width: max(300px, 70vw);
+  height: 100vh;
+  right: 0;
+  position: fixed;
+}
+
+.sidebar {
+  width: max(30vw, 300px);
+  background-color: #880000;
+  position: fixed;
+  height: 100vh;
+  left: 0;
+  align-items: center;
+  text-align: center;
+  color: white;
+  p {
+    padding: 10;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

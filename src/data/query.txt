@@ -1,0 +1,12 @@
+SELECT DISTINCT ?langLabel ?code ?country ?countryLabel ?speakers
+
+WHERE {
+  ?lang wdt:P31 wd:Q34770 .
+  ?lang wdt:P218 ?code .   
+  ?lang wdt:P17 ?country .
+  ?lang wdt:P1098 ?speakers .
+
+  SERVICE wikibase:label {  ?lang rdfs:label ?langLabel .
+                            ?country rdfs:label ?countryLabel .
+                          bd:serviceParam wikibase:language "en". }
+}
